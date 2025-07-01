@@ -1,7 +1,7 @@
 MUST BE RUN AT A 48K SAMPLE RATE 
 
-A JUCE Plugin showcasing a reverb algorithim developed for my DSP class in university. Originally implemeented on an STM32 as a direct copy of the algorithim detailed in Datorro's paper, this version 
-exists as an easier to access demo of that project, and expands upon my orginal algorithim with the following features:
+A JUCE Plugin showcasing a reverb algorithim developed for my DSP class in university. Originally implemeented on an STM32 as a direct copy of the algorithim detailed in Datorro's paper, this project 
+exists as an easier to access demo of the algorithim, and expands upon my orginal implementation with the following features:
 
 - Stereo rather than mono
 - Static biquad bank for tone shaping on the output
