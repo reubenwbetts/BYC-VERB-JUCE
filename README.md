@@ -5,7 +5,7 @@ exists as an easier to access demo of the algorithim, and expands upon my orgina
 
 - Stereo input rather than mono
 - Static biquad bank for tone shaping on the output.
-- A basic decimation (sample every second sample) and upsampling algorithim (zero-stuffing) to bring the sample rate more inline with the papers spec.
+- A basic decimation (sample every second sample) and upsampling algorithim (zero-stuffing) to bring the sample rate more inline with the papers spec (current implementation locks the entire plugin to 48k).
 - 50:50 Blend of early diffusion and late reflection stages on the output.
 
 The UI in the projucer file is different to the UI in the builds, as the builds make use of closed source assets for the knobs and wheels.
