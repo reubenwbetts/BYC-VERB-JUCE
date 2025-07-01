@@ -154,26 +154,6 @@ void BYC_VRBAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, juce
     {
         blend_value = blend_value_ptr->load();
     }
-    
-    std::atomic<float>* pre_delay_value_ptr = apvts.getRawParameterValue("PDELAY");
-    float pre_delay_value = 0.0;
-    
-    if (pre_delay_value_ptr != nullptr)
-    {
-        pre_delay_value = pre_delay_value_ptr->load();
-        early_diffusion_L.set_pre_delay(pre_delay_value, sr);
-        early_diffusion_R.set_pre_delay(pre_delay_value, sr);
-    }
-    
-    std::atomic<float>* input_lpf_value_ptr = apvts.getRawParameterValue("INPUTLPF");
-    float input_lpf_value = 0.0;
-    
-    if (input_lpf_value_ptr != nullptr)
-    {
-        input_lpf_value = input_lpf_value_ptr->load();
-        early_diffusion_L.set_bandwidth(input_lpf_value);
-        early_diffusion_R.set_bandwidth(input_lpf_value);
-    }
 
     float blend_value_dry = blend_value * -1.0 + 1.0;
     
