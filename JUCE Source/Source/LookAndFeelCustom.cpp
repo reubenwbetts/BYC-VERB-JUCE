@@ -64,11 +64,7 @@ void LookAndFeelCustom::drawRotarySlider    (    Graphics &     g,
                                      float     rotaryEndAngle,
                                      Slider &     slider )
 {
-    
-    //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    // ** This is incredibly memory inefficient, should use SVG's if this was a commercial product, but for easy demonstration this is quicker, will move to SVG asap though. **
-    // ** Exported it wrong so even though theres 200 frames many are identical, so there is visible jumping between values. **
-    //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
     // This is the binary image data that uses very little CPU when rotating,
     Image knob = ImageCache::getFromMemory (BinaryData::Minimoog_Standard_png, BinaryData::Minimoog_Standard_pngSize);
     
