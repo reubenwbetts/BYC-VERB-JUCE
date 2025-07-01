@@ -263,8 +263,6 @@ juce::AudioProcessorValueTreeState::ParameterLayout BYC_VRBAudioProcessor::creat
     params.push_back(std::make_unique<juce::AudioParameterFloat>(juce::ParameterID{"DECAY", paramVersion}, "Decay", 0.0f, 0.99f, 0.5f));
     params.push_back(std::make_unique<juce::AudioParameterFloat>(juce::ParameterID{"BLEND", paramVersion}, "Blend", 0.0f, 1.0f, 0.5f));
     params.push_back(std::make_unique<juce::AudioParameterFloat>(juce::ParameterID{"DAMP", paramVersion}, "Damp", 0.35f, 0.85f, 0.45f));
-    params.push_back(std::make_unique<juce::AudioParameterFloat>(juce::ParameterID{"PDELAY", paramVersion}, "Pre Delay", 0.01f, 1.0f, 0.0f));
-    params.push_back(std::make_unique<juce::AudioParameterFloat>(juce::ParameterID{"INPUTLPF", paramVersion}, "Input LPF", 0.25f, 0.5f, 0.25f));
     
     return {params.begin(), params.end()};
 }
