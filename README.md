@@ -9,7 +9,10 @@ exists as an easier to access demo of the algorithim, and expands upon my orgina
 - 50:50 Blend of early diffusion and late reflection stages on the output.
 
 The UI in the projucer file is different to the UI in the builds, as the builds make use of closed source assets for the knobs and wheels.
+
 Currently built for Apple Sillicon and X86/64 (X86/64 is untested however)
+
+Build folder is handled via Git LFS - must have this installed to be able to access them!
 
 Build UI:
 
