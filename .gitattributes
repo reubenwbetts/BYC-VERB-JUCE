@@ -1,0 +1,2 @@
+BYC_VERB.component filter=lfs diff=lfs merge=lfs -text
+BYC_VERB.vst3 filter=lfs diff=lfs merge=lfs -text
