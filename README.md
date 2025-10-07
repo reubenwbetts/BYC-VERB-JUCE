@@ -10,6 +10,7 @@ exists as an easier to access demo of the algorithim, and expands upon my orgina
 
 The UI in the projucer file is different to the UI in the builds, as the builds make use of closed source assets for the knobs and wheels.
 Currently built for Apple Sillicon and X86/64 (X86/64 is untested however)
+
 Build UI:
 
 <img width="475" alt="image" src="https://github.com/user-attachments/assets/1128fee1-15a5-4604-9202-354369c2b207" />
